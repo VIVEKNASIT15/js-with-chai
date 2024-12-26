@@ -44,13 +44,14 @@ myIntroduction = "vivek"
 console.log(myIntroduction);
 console.log(mySelf);
 
-let user1 ={
+const user1 ={
     myidNum: 123456,
 
     myemail:"viveknasit167@gmail.com"
 }
-let user2=user1
-let user3=user2
+
+const user2=user1
+const  user3=user2
 user1.myemail="virvjrvnea@gmail.com" 
 user1.myidNum=4562351
 console.log(user1.myemail);

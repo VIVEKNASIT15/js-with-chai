@@ -24,3 +24,6 @@ let state;
 // object
  
 console.log(typeof age, typeof name ,typeof state ,typeof null)
+
+
+console.log(8789+"474545");
