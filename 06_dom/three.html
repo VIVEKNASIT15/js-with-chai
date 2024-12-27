@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom in js</title>
+</head>
+<body style="background-color: beige;">
+    
+</body>
+<script>
+    const div =document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id= Math.round(Math.random()*10+1)
+    div.setAttribute("title","vivek") 
+    div.style.backgroundColor="green"
+    div.style.padding="12px" 
+    div.style.borderRadius="15px"  
+   // div.innerText="js with pixeleyes"
+    const addText =document.createTextNode("js with pixeleyes")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+</script>
+</html>
