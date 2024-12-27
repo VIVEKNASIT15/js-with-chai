@@ -13,7 +13,7 @@
  
 // }'
 
-let score =41
+let score =41 
   do {
     console.log(`score is ${score}`);
     score ++
