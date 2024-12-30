@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set time out</title>
+  </head>
+
+  <body>
+    <h1>digital vally</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+  </body>
+  <script>
+    //     const sayDate = function(str){
+    //     console.log("vivek", Date.now());
+    // }
+
+    // const intervalId = setInterval(sayDate, 1000);
+
+    // setTimeout(() => {
+    //     clearInterval(intervalId);
+    // }, 5000);
+    const stInt = function(str){
+    console.log(str, Date.now());
+  }
+  let interVal;
+  document.querySelector('#start').addEventListener('click',function(){
+    interValid = setInterval(stInt, 1000, 'Hello World');
+  })
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(interValid);
+    console.log('clicked');
+  })
+  </script>
+</html>

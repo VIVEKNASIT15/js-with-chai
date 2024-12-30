@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>set time out</title>
-</head>
-<body>
-    <h1> pixeleyes infotech llp </h1>
+  </head>
+
+  <body>
+    <h1>pixeleyes infotech llp</h1>
     <button id="stop">click me</button>
-</body>
-<script>
-    const vivek =function ()
-{
-    console.log("vivek");
-    
-}
-const changeText =function(){
-    document.querySelector('h1').innerHTML="it company"
+  </body>
+  <script>
+    const vivek = function () {
+      console.log("vivek");
+    };
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "it company";
+    };
+    const changeme = setTimeout(changeText, 5000);
 
-}
-const changeme=setTimeout(changeText,5000)
-
- document.querySelector('#stop').addEventListener('click',function(
- ){
-     clearTimeout(changeme)
- })
-
-</script>
-
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeme);
+      console.log("STOPPED");
+    });
+  </script>
 </html>
