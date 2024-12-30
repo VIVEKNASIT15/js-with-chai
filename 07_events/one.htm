@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="pic"
+            src="https://gteconlinelearning.com/wp-content/uploads/2020/05/javascript.jpg"
+            alt="js images"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="photo"
+            src="https://th.bing.com/th?id=OIP.VqRPE5_XaZ3T9hYV-l-nzAHaDp&w=349&h=172&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2
+                "
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="capture"
+            src="https://th.bing.com/th/id/OIP.57Ue_-ycNDiNhr3op_L4UAHaEU?w=307&h=180&c=7&r=0&o=5&pid=1.7"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="clicks"
+            src="https://th.bing.com/th/id/OIP.jlVs_bWyqHSsJd7Rxv5EfQHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7"
+            alt=""
+          />
+        </li>
+        <li>
+          <a
+            style="color: aliceblue"
+            href="https://chatgpt.com/"
+            id="chatgpt"
+            target="_blank"
+            >chatgpt</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    //  document.getElementById('photo').onclick=()=>{
+    //     alert("photo clicked")
+    // }
+
+    //     document.getElementById('images').addEventListener('click',function(e)
+    // {
+    //     console.log("inside the ul");
+
+    // })
+    // document.getElementById('capture').addEventListener('click',function(e)
+    // {
+    //     console.log("capture clicked");
+    //     e.stopPropagation()
+    // })
+
+    // document.getElementById('capture').addEventListener('click',function(e)
+    // {
+    //     console.log("capture clicked");
+    //     e.stopPropagation()
+    //     e.preventDefault();
+    // })
+    document.querySelector('#images').addEventListener('click', function(e) {
+    console.log(e.timestamp);  // Outputs the time when the event occurred in milliseconds
+});
+
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.tagName);
+      if (e.target.tagName === "IMG") {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+      }
+    });
+  </script>
+</html>
