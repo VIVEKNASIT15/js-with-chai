@@ -76,17 +76,17 @@
         e.stopPropagation()
         e.preventDefault();
     })
-//     document.querySelector('#images').addEventListener('click', function(e) {
-//     console.log(e.timestamp);  // Outputs the time when the event occurred in milliseconds
-// });
+    document.querySelector('#images').addEventListener('click', function(e) {
+    console.log(e.timestamp);  // Outputs the time when the event occurred in milliseconds
+});
 
-//     document.querySelector("#images").addEventListener("click", function (e) {
-//       console.log(e.target.tagName);
-//       if (e.target.tagName === "IMG") {
-//         console.log(e.target.id);
-//         let removeIt = e.target.parentNode;
-//         removeIt.remove();
-//       }
-//     });
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.tagName);
+      if (e.target.tagName === "IMG") {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+      }
+    });
   </script>
 </html>
