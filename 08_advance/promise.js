@@ -44,7 +44,7 @@ promiseTwo
  
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false
+        let error = true
         if (!error) {
             resolve({username: "javascript", password: "123"})
         } else {
